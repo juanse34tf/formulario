@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Flores - Floristería</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h2>Pedido de Flores</h2>
+        <p>Floristería - Ventas de Flores Frescas</p>
+
+        <form id="formulario-flores">
+            <div class="grupo-input">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Sebastian">
+            </div>
+
+            <div class="grupo-input">
+                <label for="direccion">Dirección de Entrega:</label>
+                <input type="text" id="direccion" name="direccion" required placeholder="Ej. Calle 10 # 20-30, Barrio X">
+            </div>
+
+            <div class="grupo-input">
+                <label for="plan">Tipo de Arreglo Floral:</label>
+                <select id="plan" name="plan" required>
+                    <option value="">-- Selecciona un arreglo --</option>
+                    <option value="rosas">Ramo de Rosas</option>
+                    <option value="mixtas">Flores Mixtas</option>
+                    <option value="girasoles">Ramo de Girasoles</option>
+                    <option value="especial">Arreglo Especial Personalizado</option>
+                </select>
+            </div>
+
+            <div class="grupo-input">
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="3" placeholder="Mensaje para dedicatoria o instrucciones especiales de entrega..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Realizar Pedido</button>
+        </form>
+    </div>
+
+</body>
+</html>
