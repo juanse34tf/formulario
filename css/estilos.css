@@ -4,8 +4,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
 }
 
 .contenedor-formulario {
@@ -76,4 +77,76 @@ textarea:focus {
 
 .btn-enviar:hover {
     background-color: #c2185b;
+}
+
+/* Media Queries para diseño responsivo */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .contenedor-formulario {
+        padding: 25px 30px;
+        max-width: 90%;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .contenedor-formulario {
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 6px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    
+    p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-size: 13px;
+    }
+    
+    input[type="text"],
+    select,
+    textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .btn-enviar {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 320px) {
+    .contenedor-formulario {
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    .btn-enviar {
+        font-size: 14px;
+    }
 }
